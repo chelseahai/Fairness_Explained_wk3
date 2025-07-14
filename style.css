@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --accent-color: #000000;
+    --border-color: #e6e6e6;
+    --font-serif: 'DM Serif Display', serif;
+    --font-sans: 'Outfit', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.75;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+header h1 {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--accent-color);
+    letter-spacing: 0.5px;
+}
+
+nav {
+    text-align: center;
+    padding: 24px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent-color);
+    margin: 0 14px;
+    font-weight: 400;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: opacity 0.2s ease;
+}
+
+nav a:hover {
+    opacity: 0.6;
+}
+
+main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 60px 30px;
+}
+
+main section {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+main section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    padding: 40px 20px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 80px;
+}
+
+
+.dot-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+  height: 100%;
+}
